@@ -64,3 +64,85 @@ ul {
 li {
   margin-bottom: var(--space-sm);
 }
+
+/* ── 5. Top navigation bar ── */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--color-text);
+}
+
+.main-nav {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.main-nav a {
+  color: var(--color-muted);
+}
+
+.main-nav a:hover {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+/* ── 6. Two-column layout shell ── */
+.layout {
+  display: flex;
+  gap: var(--space-lg);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--space-lg);
+}
+
+.sidebar {
+  flex: 0 0 200px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  position: sticky;
+  top: var(--space-lg);
+}
+
+.sidebar-nav a {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.sidebar-nav a:hover {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.content {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: var(--content-width);
+}
+
+/* ── 7. Sidebar labels ── */
+.sidebar-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.sidebar-more {
+  display: inline-block;
+  margin-top: var(--space-md);
+  font-size: 0.9rem;
+  color: var(--color-accent);
+}
