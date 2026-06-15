@@ -146,3 +146,35 @@ li {
   font-size: 0.9rem;
   color: var(--color-accent);
 }
+
+/* ── 8. Log entry list ── */
+.entry-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.entry-list li {
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-muted);
+}
+
+.entry-list a {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.entry-list a:hover {
+  color: var(--color-accent);
+}
+
+.draft {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  padding: 1px 6px;
+  margin-left: 4px;
+}
